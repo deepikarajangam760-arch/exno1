@@ -51,7 +51,7 @@ df.info()
 
 import pandas as pd
 
-data=pd.read_csv(r"C:\Users\MIRDULA\Downloads\Data_set (1).csv")
+data=pd.read_csv(r"C:\Users\DEEPIKA\Downloads\Data_set (1).csv")
 
 df=pd.DataFrame(data)
 
