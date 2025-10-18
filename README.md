@@ -24,7 +24,7 @@ STEP 6: Use zscore of to remove outliers
 
 import pandas as pd
 
-data=pd.read_csv(r"C:\Users\MIRDULA\Downloads\Data_set (1).csv")
+data=pd.read_csv(r"C:\Users\DEEPIKA\Downloads\Data_set (1).csv")
 
 print(data)
 
@@ -258,9 +258,11 @@ print(df_clean)
 
 <img width="653" height="771" alt="image" src="https://github.com/user-attachments/assets/57017879-7e75-4eed-a7f5-0b87a541e219" />
 
-Result
+# Result
 
 THUS DATA CLEANING IS PERFORMED
+
+      
 
 
 
