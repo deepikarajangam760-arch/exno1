@@ -258,9 +258,7 @@ print(df_clean)
 
 <img width="653" height="771" alt="image" src="https://github.com/user-attachments/assets/57017879-7e75-4eed-a7f5-0b87a541e219" />
 
-# Result
 
-THUS DATA CLEANING IS PERFORMED
 
       
 
@@ -283,4 +281,5 @@ THUS DATA CLEANING IS PERFORMED
 
 
 # Result
-          <<include your Result here>>
+THUS DATA CLEANING IS PERFORMED
+          
