@@ -21,6 +21,7 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
+
 import pandas as pd
 
 data=pd.read_csv(r"C:\Users\MIRDULA\Downloads\Data_set (1).csv")
@@ -31,11 +32,13 @@ print(data)
 df.describe()
 
 <img width="824" height="368" alt="image" src="https://github.com/user-attachments/assets/51363d84-43db-46e2-8bb4-e174fe99986d" />
+
 df=pd.DataFrame(data)
 
 print(df.isnull())
 
 <img width="685" height="569" alt="image" src="https://github.com/user-attachments/assets/132cbd6c-0067-4eb8-b20a-b5fe9596aa8e" />
+
 df=pd.DataFrame(data)
 
 print(df.isnull().sum())
@@ -45,6 +48,7 @@ print(df.isnull().sum())
 df.info()
 
 <img width="404" height="272" alt="image" src="https://github.com/user-attachments/assets/247c22e9-71ee-4ef1-9267-3dc9d3c21974" />
+
 import pandas as pd
 
 data=pd.read_csv(r"C:\Users\MIRDULA\Downloads\Data_set (1).csv")
@@ -56,25 +60,32 @@ dfd=df.dropna()
 print("AFTER DROPNA")
 
 print(dfd)
+
 <img width="670" height="875" alt="image" src="https://github.com/user-attachments/assets/9e6e60cd-b4e1-4d5a-8e47-898a83743549" />
+
 dfd=df.dropna(axis=1)
 
 print("AFTER DROPNA")
 
 print(dfd)
+
 <img width="526" height="316" alt="image" src="https://github.com/user-attachments/assets/872a8cc6-04a0-4f27-9f6b-32fe204bd088" />
 dfd=df.dropna(axis=1,inplace=True)
 
 print("AFTER DROPNA")
 
 print(dfd)
+
 <img width="508" height="44" alt="image" src="https://github.com/user-attachments/assets/1c4d7a93-c304-433b-893d-9198004e02c3" />
+
 df=pd.DataFrame(data)
 
 df1=df.iloc[[1,3,5],[1,3]]
 
 print(df1)
+
 <img width="423" height="92" alt="image" src="https://github.com/user-attachments/assets/fe109e8a-0de5-494f-be28-c7d4ed902662" />
+
 dfd=df.dropna(axis=0)
 
 print("AFTER DROPNA")
@@ -82,11 +93,13 @@ print("AFTER DROPNA")
 print(dfd)
 
 <img width="660" height="324" alt="image" src="https://github.com/user-attachments/assets/9ae2391e-be3e-49b6-959e-34c9296328a7" />
+
 df=pd.DataFrame(data)
 
 print(df.isnull().any())
 
 <img width="343" height="213" alt="image" src="https://github.com/user-attachments/assets/1aeed245-2f0b-498c-a1bd-260ff0a4435e" />
+
 dfd=df.fillna(0)
 
 print("AFTER FILLNA")
@@ -110,6 +123,7 @@ print("AFTER FILLNA")
 print(dfd)
 
 <img width="738" height="866" alt="image" src="https://github.com/user-attachments/assets/64248c9a-0b28-4c7d-a52e-06fdc32c28ad" />
+
 dfd=df.fillna({'show_name':'nandy','aired_on':'wednesday','original_network':'Jio','rating':7.5})
 
 print("AFTER FILLNA")
@@ -117,6 +131,7 @@ print("AFTER FILLNA")
 print(dfd)
 
 <img width="794" height="876" alt="image" src="https://github.com/user-attachments/assets/883d3ab7-fb0f-4823-b642-1dec96a62f55" />
+
 import pandas as pd
 
 import matplotlib.pyplot as plt
@@ -138,6 +153,7 @@ plt.bar(x,y)
 plt.show()
 
 <img width="691" height="811" alt="image" src="https://github.com/user-attachments/assets/0830d281-86bd-4f1d-a83b-a083ebf2cd34" />
+
 import pandas as pd
 
 import matplotlib.pyplot as plt
@@ -169,6 +185,7 @@ plt.scatter(x,y)
 plt.show()
 
 <img width="730" height="516" alt="image" src="https://github.com/user-attachments/assets/7adb35d8-bd50-4371-a5cf-f68c3c2d39d1" />
+
 import pandas as pd
 
 import matplotlib.pyplot as plt
@@ -204,6 +221,7 @@ df_cleaned = df[(z_scores < 3).all(axis=1)]
 df_cleaned
 
 <img width="569" height="513" alt="image" src="https://github.com/user-attachments/assets/15fb2645-951e-46dd-86ce-33738a60bcca" />
+
 import pandas as pd
 
 import numpy as np
@@ -239,9 +257,10 @@ print("The Dataset after removing the outliers")
 print(df_clean)
 
 <img width="653" height="771" alt="image" src="https://github.com/user-attachments/assets/57017879-7e75-4eed-a7f5-0b87a541e219" />
-//Result
-THUS DATA CLEANING IS PERFORMED
 
+Result
+
+THUS DATA CLEANING IS PERFORMED
 
 
 
